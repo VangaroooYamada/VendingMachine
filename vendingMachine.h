@@ -2,7 +2,7 @@
 #include "drinkType.h"
 
 class VendingMachine {
-private:
+public:
     DrinkType buy(int payment, DrinkType drinkType);
     int refund();
 };

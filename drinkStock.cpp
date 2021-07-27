@@ -3,7 +3,7 @@
 class DrinkStock
 {
 private:
-    std::map<DrinkType, int> drinkStocker {
+    std::map<DrinkType, int> stocks {
         {DrinkType::Coke, 5},
         {DrinkType::Diet_Coke, 5},
         {DrinkType::Tea, 5},
@@ -11,9 +11,9 @@ private:
 
 public:
     bool checkStocks(DrinkType drinkType) {
-        return drinkStocker[drinkType] > 0;
+        return stocks[drinkType] > 0;
     };
     void decreaseStocks(DrinkType drinkType) {
-        drinkStocker[drinkType]--;
+        stocks[drinkType]--;
     };
 };

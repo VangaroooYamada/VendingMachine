@@ -5,7 +5,7 @@ private:
     int numberOf100yen = 10;
 
 public:
-    bool checkStock();
+    bool checkStocks();
     void refundCoins();
 
     CoinStock();

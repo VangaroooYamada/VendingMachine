@@ -10,4 +10,7 @@ private:
 public:
     bool checkStocks(DrinkType drinkType);
     void decreaseStocks(DrinkType drinkType);
+
+    DrinkStock();
+    ~DrinkStock();
 };
